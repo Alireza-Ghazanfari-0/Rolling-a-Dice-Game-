@@ -1,0 +1,51 @@
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(239, 24, 46, 0.969),
+    rgb(245, 18, 230)
+  );
+  background-attachment: fixed;
+}
+
+.main-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.a-newGame {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%);
+}
+.a-rollDice {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 7rem;
+}
+.a-hold {
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.a-image {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10rem;
+}
+.a-window-1 {
+  background-color: rgb(246, 186, 186);
+}
+.a-window-2 {
+  background-color: rgb(246, 186, 186);
+}

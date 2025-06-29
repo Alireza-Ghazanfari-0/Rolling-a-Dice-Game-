@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link
+      rel="stylesheet"
+      href="src/libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css"
+    />
+    <script src="src/libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="src/style/PigGame.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row main-window w-75 h-75">
+        <button
+          type="button"
+          class="col-2 px-0 btn btn-info mt-5 rounded-pill opacity-75 a-newGame"
+        >
+          New Game
+        </button>
+        <button
+          type="button"
+          class="col-2 px-0 btn btn-danger rounded-pill bottom-0 opacity-75 a-rollDice"
+        >
+          ROLL DICE
+        </button>
+        <button
+          type="button"
+          class="col-1 px-0 position-absolute btn btn-warning rounded-pill bottom-0 mb-5 opacity-75 a-hold"
+        >
+          HOLD
+        </button>
+        <div class="position-absolute" style="z-index: 10">
+          <img src="src/images/dice-1.png" class="col-1 rounded a-image" />
+        </div>
+        <div class="col rounded-start position-relative a-window-1">
+          <div class="mt-5">
+            <div class="fs-1 fw-bold text-center name1">Player 1</div>
+            <div class="fs-2 fw-bold text-danger text-center pt-2 a-score1">
+              0
+            </div>
+          </div>
+          <div
+            class="position-absolute bottom-0 mb-5 start-50 translate-middle-x text-bg-danger px-4 py-2 rounded fs-4"
+          >
+            Current
+            <div class="fw-bold text-center a-current1">0</div>
+          </div>
+        </div>
+        <div class="col rounded-end position-relative opacity a-window-2">
+          <div class="mt-5">
+            <div class="fs-1 fw-bold text-center name2">Player 2</div>
+            <div class="fs-2 fw-bold text-danger text-center pt-2 a-score2">
+              0
+            </div>
+          </div>
+          <div
+            class="position-absolute bottom-0 mb-5 start-50 translate-middle-x text-bg-danger px-4 py-2 rounded fs-4"
+          >
+            Current
+            <div class="fw-bold text-center a-current2">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/style/PigGame.js"></script>
+  </body>
+</html>
